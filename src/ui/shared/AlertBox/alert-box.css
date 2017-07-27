@@ -1,0 +1,33 @@
+.alert-box{
+  background: rgba(4,4,4,0.43);
+  position: absolute;
+  top:0;
+  right:0;
+  bottom: 0;
+  left:0;
+  /*拥有占据整个页面的效果*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.alert-content-card{
+  background-color: #FFFFFF;
+  border-radius: 17px;
+  width: 228px;
+  margin: 0 auto;
+}
+.alert-content-card .alert-close-button{
+  font-size: 18px;
+  color:#F77062;
+  text-align: center;
+  line-height: 27px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.alert-content-card .alert-msg{
+  font-size: 14px;
+  color:#212121;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}

@@ -1,26 +1,26 @@
-.signup{
+.login{
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
-.signup-content{
+.login-content{
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 /*hero部分*/
-.signup-hero{
+.login-hero{
   height: 140px;
 }
-.signup-hero h1.title{
+.login-hero h1.title{
   font-size: 36px;
   color:#FFFFFF;
   line-height: 42px;
   text-align: center;
   margin-top: 54px;
 }
-.signup-hero p.slogan{
+.login-hero p.slogan{
   text-align: center;
   margin-top: 10px;
   font-size: 16px;
@@ -28,19 +28,19 @@
 
 }
 /*form部分*/
-.signup-form-wrap{
+.login-form-wrap{
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.signup-form{
+.login-form{
   display:flex;
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
 }
-.signup-form input{
+.login-form input{
   border: none;
   outline: 0;
   text-indent: 20px;
@@ -48,25 +48,25 @@
   color:#878787;
   width: 100%;
 }
-.signup-form input::placeholder{
+.login-form input::placeholder{
   color:#CECECE;
 }
-.signup-actions{
+.login-actions{
   margin-top: 14px;
 }
-.signup-actions button{
+.login-actions button{
   width: 100%;
   border: none;
   background: #FFFFFF;
   line-height: 56px;
   color:red;
 }
-.signup-other-option{
+.login-other-option{
   margin-bottom: 35px;
   margin-top: 15px;
   text-align: center;
 }
-.signup-other-option a{
+.login-other-option a{
   display: inline-block;
   color:#FFFFFF;
   line-height: 20px;

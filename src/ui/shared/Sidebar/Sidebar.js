@@ -15,7 +15,7 @@ class Sidebar extends React.Component{
       <div className="sidebar">
         <Menu isOpen={this.state.isOpen}>
           <div className="bm-user-info">
-            <img src="http://media.haoduoshipin.com/yummy/default-avatar.png" />
+            <img src="http://media.haoduoshipin.com/yummy/default-avatar.png" alt="avatar"/>
             <div className="bm-user-auth">
               <Link to="" className="bm-user-left">happypeter</Link>
               <Link to="/" className="bm-user-right">退出</Link>

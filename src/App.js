@@ -1,16 +1,18 @@
 import React, { Component } from 'react'
 import './App.css';
-import {BrowserRouter as Router,Route,Link,Switch} from 'react-router-dom'
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
 import Home from './ui/pages/Home/Home'
 import Signup from './ui/pages/Signup/Signup'
 import Login from './ui/pages/Login/Login'
 import Sidebar from './ui/shared/Sidebar/Sidebar'
 import Dashboard from './ui/pages/Dashboard/Dashboard'
+import AlertBox from './ui/shared/AlertBox/AlertBox'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <AlertBox />
         <Router>
           <div>
             <Route render={({location})=>{

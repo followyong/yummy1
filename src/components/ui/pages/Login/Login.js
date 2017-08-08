@@ -45,7 +45,7 @@ class Login extends Component {
             登录
           </h1>
           <p className="slogan">
-            连接小而确定的幸福
+            连接一个个小而确定的幸福
           </p>
         </div>
         <form ref={value => this.loginForm = value}

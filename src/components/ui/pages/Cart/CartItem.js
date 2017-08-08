@@ -3,20 +3,19 @@ import { connect } from 'react-redux'
 import './cart-item.css'
 
 class CartItem extends Component {
-
   state = {
     itemCount: 1
-
   }
-
   decrement = () => {
-    this.props.dispatch({ type: 'DECR_CART_ITEM', dishId: this.props.dishId })
+    if(this.props.dishes[this.props.dishId].count<1){
+      this.setState({itemCount: 0})
+    }else{
+      this.props.dispatch({ type: 'DECR_CART_ITEM', dishId: this.props.dishId })
+    }
   }
-
   increment = () => {
     this.props.dispatch({ type: 'INCR_CART_ITEM', dishId: this.props.dishId })
   }
-
   render(){
     const { name, poster, price} = this.props.dish
     return(
@@ -52,11 +51,9 @@ class CartItem extends Component {
     )
   }
 }
-
 const mapStateToProps = (state) => {
   return ({
     dishes: state.cart.dishes
   })
 }
-
 export default connect(mapStateToProps)(CartItem)

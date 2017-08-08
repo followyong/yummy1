@@ -5,16 +5,11 @@ import { connect } from 'react-redux'
 import './comment.css'
 import moment from 'moment'
 import 'moment/locale/zh-cn'
-// https://github.com/facebookincubator/create-react-app/pull/2187/commits/97226a0670063b579215e7b44987f3957842c5df
 import {
   Link
 } from 'react-router-dom'
 
-
-
-
 class Comment extends Component {
-
   newComment = (e) => {
     e.preventDefault()
     let content = this.commentInput.value
@@ -35,16 +30,11 @@ class Comment extends Component {
     }).catch(err => {
       console.log('err', err)
       if(err.response) { console.log('err.response', err.response.data.err)}
-      // 如果用户填写评论为空，那么界面上没有任何反应（应该在用户输入内容前禁用按钮），
-      // 终端里会报出“content, required” 这样的报错信息。
     })
   }
-
   render(){
     let { comments } = this.props
     moment.locale('zh-cn')
-
-
     let hereCommentKeys = Object.keys(comments).filter(id => comments[id].dish._id === this.props.dishId)
 
     let commentList = hereCommentKeys.map( id => (
@@ -87,7 +77,6 @@ class Comment extends Component {
     )
   }
 }
-
 const mapStateToProps = (state) => ({
   comments: state.comment.all,
   isAuthenticated: state.account.isAuthenticated

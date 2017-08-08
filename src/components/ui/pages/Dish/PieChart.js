@@ -1,14 +1,10 @@
 import React, { Component } from 'react'
-import { CSSTransitionGroup } from 'react-transition-group' // ES6
-
 import { PieChart, Pie, Cell } from 'recharts';
 import './pie-chart.css'
-
 
 const data = [{name: '水分', value: 200}, {name: '糖分', value: 100},
                   {name: '蛋白质', value: 100}, {name: '脂肪', value: 130}];
 const COLORS = ['#f4baba', '#e0cd84', '#91e1dd', '#a48ad4'];
-
 
 class MyPieChart extends Component {
   constructor(props) {
@@ -32,7 +28,6 @@ class MyPieChart extends Component {
     });
 
   }
-
   render() {
     const items = this.state.items.map((item, i) => (
       <div key={item.color} className="legend">
@@ -71,12 +66,6 @@ class MyPieChart extends Component {
           }
         </Pie>
         </PieChart>
-        <CSSTransitionGroup
-          transitionName="example"
-          transitionEnterTimeout={500}
-          transitionLeaveTimeout={300}>
-          {items}
-        </CSSTransitionGroup>
       </div>
     );
   }

@@ -3,19 +3,15 @@ import CommentIcon from '../../icons/CommentIcon'
 import { Link } from 'react-router-dom'
 import moment from 'moment'
 
-
 class FeedItem extends Component {
-
   state = {
     expand: false,
   }
-
   toggleExpand = () => {
     this.setState({
       expand: !this.state.expand
     })
   }
-
   render() {
     const { comment } = this.props
     console.log('feed-item', comment)
@@ -53,5 +49,4 @@ class FeedItem extends Component {
     )
   }
 }
-
 export default FeedItem

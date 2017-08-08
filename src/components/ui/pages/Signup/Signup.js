@@ -41,7 +41,7 @@ class SignUp extends Component {
             注册
           </h1>
           <p className="slogan">
-            连接小而确定的幸福
+            连接一个个小而确定的幸福
           </p>
         </div>
         <form onSubmit={this.signup} className="signup-form">

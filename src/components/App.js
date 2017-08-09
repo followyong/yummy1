@@ -16,7 +16,7 @@ import CartButton from './ui/shared/CartButton/CartButton'
 import User from './ui/pages/User/User'
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Redirect
